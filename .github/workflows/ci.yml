@@ -1,0 +1,41 @@
+<!--
+
+JavaScript is a high-level programming language mainly used to make websites interactive and dynamic.
+
+	What JavaScript Does
+
+		With JavaScript, developers can:
+
+		Update webpage content without reloading
+		
+		Create animations and games
+		
+		Validate forms
+		
+		Build web apps
+		
+		Communicate with servers (APIs)
+		
+		Control multimedia and user interactions
+
+
+-->
+<html>
+<head>
+	<meta name= "title" content = "JavaScript Variable">
+	<meta name = "description" content="This is Second Programm">
+</head
+
+<body>
+	
+	<script>
+		var a = 10;
+		const  b = 20;
+		const c = 30;
+		console.log(a, b, c);
+		
+	</script>
+	
+	
+</body>
+</html>
