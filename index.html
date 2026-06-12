@@ -1,41 +1,82 @@
-<!--
-
-JavaScript is a high-level programming language mainly used to make websites interactive and dynamic.
-
-	What JavaScript Does
-
-		With JavaScript, developers can
-
-		Update webpage content without reloading
-		
-		Create animations and games
-		
-		Validate forms
-		
-		Build web apps
-		
-		Communicate with servers (APIs)
-		
-		Control multimedia and user interactions
-
-
--->
 <html>
-<head>
-	<meta name= "title" content = "JavaScript Variable">
-	<meta name = "description" content="This is Second Programm">
-</head
-
-<body>
+	<body>
 	
-	<script>
-		var a = 10;
-		const  b = 20;
-		const c = 30;
-		console.log(a, b, c);
+		<div id="app"></div>
 		
-	</script>
-	
-	
-</body>
+		
+		
+		
+		
+<script>
+		
+			const features = [
+			  {
+				category: "Fundamentals",
+				topics: [
+				  "Variables",
+				  "Data Types",
+				  "Operators",
+				  "Functions"
+				]
+			  },
+			  {
+				category: "Intermediate",
+				topics: [
+				  "Arrays",
+				  "Objects",
+				  "Loops",
+				  "DOM Manipulation",
+				  "Events"
+				]
+			  },
+			  {
+				category: "Advanced",
+				topics: [
+				  "ES6+",
+				  "Promises",
+				  "Async/Await",
+				  "Modules",
+				  "Closures"
+				]
+			  },
+			  {
+				category: "Browser APIs",
+				topics: [
+				  "Local Storage",
+				  "Fetch API",
+				  "Geolocation"
+				]
+			  },
+			  {
+				category: "Frontend",
+				topics: [
+				  "React",
+				  "Next.js"
+				]
+			  }
+			];
+
+			const app = document.getElementById("app");
+
+			features.forEach(section => {
+
+				const card = document.createElement("div");
+
+				card.innerHTML = `
+					<h2>${section.category}</h2>
+					<ul>
+						${section.topics.map(topic =>
+							`<li>
+								<a href="${topic.toLowerCase().replace(/\s+/g,'-')}.html">
+									${topic}
+								</a>
+							</li>`
+						).join("")}
+					</ul>
+				`;
+
+				app.appendChild(card);
+			});
+		</script>
+	</body>
 </html>
